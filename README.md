@@ -11,4 +11,5 @@ Running the RPC Server:
 
 Run:
 > python test.py
+
 To verify that the server is running.
