@@ -1,0 +1,20 @@
+
+syntax = "proto3";
+
+enum TextType {
+    NEWS = 1;
+    OPINION = 2;
+    ADVICE = 3;
+}
+
+message TextTypeRequest {
+    string raw_text = 1;
+}
+
+message TextTypeResponse {
+    TextType type = 1;
+}
+
+service Types {
+    rpc GetType (TextTypeRequest) returns (TextTypeResponse);
+}
