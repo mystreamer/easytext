@@ -2,9 +2,9 @@
 syntax = "proto3";
 
 enum TextType {
-    NEWS = 1;
-    OPINION = 2;
-    ADVICE = 3;
+    NEWS = 0;
+    OPINION = 1;
+    ADVICE = 2;
 }
 
 message TextTypeRequest {
